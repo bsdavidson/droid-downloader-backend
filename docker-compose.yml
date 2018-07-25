@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  web:
+    build: .
+    ports:
+     - "3000:3000"
+    depends_on:
+      - postgres
+      - redis
+  redis:
+    image: "redis:alpine"
+
+  postgres:
+    image: mdillon/postgis
+    restart: always
+    environment:
+      - POSTGRES_USER=ddb
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres-password
+    secrets:
+        - postgres-password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
+
+secrets:
+  postgres-password:
+    file: ./secrets/postgres-password
