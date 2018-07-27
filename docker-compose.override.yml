@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  web:
+    build: .
+    command: ["yarn","start-debug"]
+    ports:
+     - "9229:9229"
+    volumes:
+      - ./lib:/opt/lib

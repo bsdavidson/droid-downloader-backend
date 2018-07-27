@@ -2,22 +2,30 @@
   "name": "droid-downloader-backend",
   "version": "0.1.0",
   "description": "A backend server for droid-downloader",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "author": "Brian Davidson",
   "license": "MIT",
   "dependencies": {
+    "ioredis": "^3.2.2",
     "koa": "^2.5.2",
-    "koa-router": "^7.4.0"
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
+    "sequelize": "^4.38.0"
   },
   "devDependencies": {
+    "@types/ioredis": "^3.2.13",
     "@types/jest": "^23.3.0",
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.30",
     "@types/node": "^10.5.2",
+    "@types/sequelize": "^4.27.24",
     "jest": "^23.4.1",
     "node-dev": "^3.1.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./lib/index.js",
+    "start-debug": "nodemon --watch ./lib --inspect=0.0.0.0:9229 ./lib/index.js"
   }
 }
