@@ -6,6 +6,7 @@
   "author": "Brian Davidson",
   "license": "MIT",
   "dependencies": {
+    "exif": "^0.6.0",
     "ioredis": "^3.2.2",
     "koa": "^2.5.2",
     "koa-bodyparser": "^4.2.1",
