@@ -13,7 +13,8 @@
     "koa-router": "^7.4.0",
     "nodemon": "^1.18.3",
     "pg": "^7.4.3",
-    "sequelize": "^4.38.0"
+    "sequelize": "^4.38.0",
+    "sharp": "^0.20.5"
   },
   "devDependencies": {
     "@types/ioredis": "^3.2.13",
