@@ -1,4 +1,5 @@
 .git
+/images
 /secrets
 Dockerfile
 docker-compose.yml

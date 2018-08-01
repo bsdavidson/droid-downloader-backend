@@ -3,7 +3,13 @@ services:
   web:
     build: .
     command: ["yarn","start-debug"]
+    environment:
+      - DDB_ROOT_PATH=/images
+      - DEBUG=*,-exif
+
     ports:
      - "9229:9229"
     volumes:
       - ./lib:/opt/lib
+      - ./images:/images
+

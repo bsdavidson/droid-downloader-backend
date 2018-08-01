@@ -9,7 +9,7 @@ services:
       - REDIS_HOST=redis
     image: droid-downloader-backend
     ports:
-     - "3000:3000"
+     - "5000:5000"
     secrets:
       - postgres-password
 
