@@ -6,6 +6,7 @@
   "author": "Brian Davidson",
   "license": "MIT",
   "dependencies": {
+    "debug": "^3.1.0",
     "exif": "^0.6.0",
     "ioredis": "^3.2.2",
     "koa": "^2.5.2",
@@ -16,7 +17,8 @@
     "nodemon": "^1.18.3",
     "pg": "^7.4.3",
     "sequelize": "^4.38.0",
-    "sharp": "^0.20.5"
+    "sharp": "^0.20.5",
+    "supports-color": "^5.4.0"
   },
   "devDependencies": {
     "@types/ioredis": "^3.2.13",
